@@ -1,0 +1,15 @@
+@startuml
+
+class Folder {
+    -String folderName
+    +setFolderName()
+    +getFolderName()
+}
+class File {
+    -String fileName
+    +setFileName()
+    +getFileName()
+}
+Folder *-- File
+
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+object php_demo1
+object SourceFiles
+object .phalcon
+object cache
+object public
+object htaaccess
+object htrouter
+object index
+object IncludePaths
+object RemoteFiles
+
+php_demo1 *-- SourceFiles
+php_demo1 *-- IncludePaths
+php_demo1 *-- RemoteFiles
+SourceFiles *-- .phalcon
+SourceFiles *-- cache
+SourceFiles *-- public
+public *-- htaaccess
+public *-- htrouter
+public *-- index
+
+
+@enduml

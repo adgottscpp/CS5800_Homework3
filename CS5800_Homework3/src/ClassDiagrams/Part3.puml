@@ -1,0 +1,35 @@
+@startuml
+
+class Course {
+    -String courseName
+    +setCourseName
+    +getCourseName
+    +print()
+}
+class Instructor {
+    -String firstName
+    -String lastName
+    -String officeNumber
+    +setFirstName()
+    +setLastName()
+    +setOfficeNumber()
+    +getFirstName()
+    +getLastName()
+    +getOfficeNumber
+}
+class Textbook {
+    -String textbookTitle
+    -String textbookAuthor
+    -String textbookPublisher
+    +setTextbookTitle()
+    +setTextbookAuthor()
+    +setTextbookPublisher()
+    +getTextbookTitle()
+    +getTextbookAuthor()
+    +getTextbookPublisher
+}
+
+Course o-- Instructor
+Course o-- Textbook
+
+@enduml

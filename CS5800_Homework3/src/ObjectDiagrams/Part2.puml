@@ -1,0 +1,21 @@
+@startuml
+object Ship00
+object Ship01
+object Ship02
+object CruiseShip01
+object CargoShip02
+
+Ship01 <|-- CruiseShip01
+Ship02 <|-- CargoShip02
+
+Ship00 : name = "Ship00"
+Ship00 : year built = "1920"
+
+Ship01 : name = "CruiseShip01"
+Ship01 : year built = "1965"
+CruiseShip01 : max passengers = "1100"
+
+Ship02 : name = "CargoShip02"
+Ship02 : year built = "1990"
+CargoShip02 : cargo capacity = 900
+@enduml

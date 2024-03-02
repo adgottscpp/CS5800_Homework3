@@ -1,0 +1,49 @@
+@startuml
+
+class Employee {
+    -String firstName
+    -String lastName
+    -String socialSecurityNumber
+    +setFirstName()
+    +setLastName()
+    +setsocialSecurityNumber()
+    +getFirstName()
+    +getLastName()
+    +getsocialSecurityNumber
+}
+class SalariedEmployee {
+    -Float weeklySalary
+    +getWeeklySalary()
+    +setWeeklySalary()
+}
+class HourlyEmployee {
+    -Float employeeWage
+    -Float hoursWorked
+    +getEmployeeWage()
+    +getHoursWorked()
+    +setEmployeeWage()
+    +setHoursWorked()
+}
+class CommisionEmployee {
+    -Float commissionRate
+    -Float grossSales
+    +getCommissionRate()
+    +getGrossSales()
+    +setCommissionRate()
+    +setGrossSales()
+}
+class BaseEmployee {
+    -Float baseSalary
+    +getBaseSalary()
+    +setBaseSalary()
+}
+
+Employee <|-- SalariedEmployee
+Employee <|-- HourlyEmployee
+Employee <|-- CommisionEmployee
+Employee <|-- BaseEmployee
+
+
+
+
+@enduml

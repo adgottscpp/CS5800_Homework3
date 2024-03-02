@@ -1,0 +1,17 @@
+@startuml
+object Course
+object Instructor
+object Textbook
+
+Course o-- Instructor
+Course o-- Textbook
+
+Course : course name = "class 001"
+Instructor : first name = "Steve"
+Instructor : last name = "Stevenson"
+Instructor : office number = "1004"
+Textbook : title = "good book"
+Textbook : author = "Steve Stevenson"
+Textbook : publisher = "a company"
+
+@enduml
